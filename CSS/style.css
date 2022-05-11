@@ -30,7 +30,7 @@ body{
 nav{
     margin: auto;
     width:  800px;
-    height: 100px;
+    height: 50px;
 }
 
 .topnav{ 
@@ -52,6 +52,26 @@ nav{
 .topnav.icon{
     display: none;
 }
+/* */ 
+.mw-100{
+    max-width: 100%;
+}
+.advantages_container{
+        display: flex;
+        justify-content: center;
+}
+.advantages{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.advantages_item{
+    width: 30%;
+}
 
 @media screen and (max-width: 768px){
     .topnav a:not(:first-child){
@@ -65,7 +85,6 @@ nav{
     }
     nav{
         width:  100px;
-        height: 100px;
     }
     .topnav.responsive{
         position: relative;
@@ -80,4 +99,15 @@ nav{
         display:  block;
         text-align: left ;
     }
+    .advantages_item{
+        width: 30%;
+    }
 } 
+@media screen and (max-width: 420px){
+        .advantages{
+            flex-direction: column;
+        }
+        .advantages_item{
+            width: 100%;
+        }
+}
