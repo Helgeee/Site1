@@ -34,20 +34,20 @@ nav{
 }
 
 .topnav{ 
-    background: #fff;
+    background: white;
     font-size:  14px;
     margin-top:  40px;
 }
 
 .topnaw a{
-    color: #000;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     font-size: 15px ; 
 }
 
 .topnav a:hover{
-    border-bottom: 2px solid #000
+    border-bottom: 2px solid black; 
 }
 .topnav.icon{
     display: none;
@@ -103,6 +103,34 @@ nav{
         width: 30%;
     }
 } 
+footer{
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 25px;
+}
+footer a{
+    color: white;
+    font-size: 14px;
+    margin-left: 10px;
+}
+footer p{
+    color: white;
+}
+footer nav a:hover{
+    border-bottom: 1px solid white;
+}
+.social img{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.social img:hover{
+    background: #494949;
+    border-radius: 50% ;
+}
+
 @media screen and (max-width: 420px){
         .advantages{
             flex-direction: column;
