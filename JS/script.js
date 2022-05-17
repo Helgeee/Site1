@@ -8,6 +8,7 @@ window.onload = function () {
     }
     }
 };
+
 function init(){ //location карта yandex
     let map = new ymaps.Map('map',{
         center:[59.91757334340399,30.41670138036452],

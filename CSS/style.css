@@ -25,32 +25,31 @@ body{
      max-width: 200px;
      box-sizing: border-box; 
 }
-
 /*-Стилизация меню-*/
 nav{
     margin: auto;
     width:  800px;
-    height: 70px;
+    height: 50px;
+    font-size: 20px;
 }
 .topnav{ 
     width: 100%;
     height: auto;
-    background-color:rgb(255, 255, 255);
     margin: 0 auto;
     text-align: center;
-    padding-top: 25px;
-  
+    padding-top: 15px;
+    font-weight: 500;
 }
 .topnaw a{
     color: rgb(0, 0, 0);
-    font-size: 14px;
+    font-size: 20px;
     margin-left: 10px;
 }
 .topnav p{
     color: rgb(0, 0, 0);
 }
 .topnav a:hover{
-    border-bottom: 1px solid black; 
+    border-bottom: 1px solid rgb(0, 0, 0);
 }
 .topnav.icon{
     display: none;
@@ -59,9 +58,9 @@ nav{
 .mw-100{
     max-width: 100%;
 }
-/* */
+/* нижнее меню */
 .advantages_container{
-        display: flex;
+    display: flex;
         justify-content: center;    
 }
 .advantages{
@@ -72,7 +71,6 @@ nav{
     justify-content: space-between;
     text-align: center;
     flex-wrap: wrap;
-   
 }
 .advantages_item{
     width: 40%; 
@@ -83,11 +81,11 @@ footer{
     background-color:rgb(233, 233, 233);
     margin: 0 auto;
     text-align: center;
-    padding-top: 25px;
+    padding-top: 15px;
 }
 footer a{
     color: rgb(0, 0, 0);
-    font-size: 14px;
+    font-size: 15px;
     margin-left: 10px;
 }
 footer p{
@@ -123,7 +121,7 @@ footer nav a:hover{
 .photo-itm img:hover{
     opacity: 1;
 }
-
+/* BLOG */
 .blog-container{
     background: #fafafa;
     border-radius: 5px;
@@ -133,13 +131,13 @@ footer nav a:hover{
     width: 50rem;
 }
 .blog-container a:hover{
-    border-color: #ff4d4d;
-    color:#ff4d4d;
+    border-color: #4d6eff;
+    color:#4d6eff;
 }
 .blog-cover{
     background: url(../img/porshe-911.jpg);
     background-size: cover;
-    border-radius: 5px 5px 0 0;
+    border-radius: 10px 10px 0 0;
     height: 15rem;
     box-shadow:inset rgba(0, 0, 0, 0.2) 0 64px;
 }
@@ -149,7 +147,7 @@ footer nav a:hover{
 }
 .blog-title h1 a{
     color:#333;
-    font-weight: 100;
+    font-weight: 500;
 }
 .blog-text p{
     color:#4d4d4d;
@@ -171,7 +169,7 @@ footer nav a:hover{
     font-size: .75rem;
     height: 1.5rem;
     line-height: 1.5rem;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     padding: 0 .5rem;
     text-align: center;
     text-transform: uppercase;
@@ -206,6 +204,7 @@ footer nav a:hover{
     border-radius: 3px;
     padding: 0 0.50rem;
 }
+
 .map{ /*location карта yandex */
     width: 100% ;
     height: 400px;
@@ -265,14 +264,48 @@ textarea{
     background-color:#fff;
     transition: .3s easy;
 }
-
-
 .workshop{ /* Projects - Лейбл + надпись*/
     width: 100%;
     height: auto;
     margin: auto;
     text-align: center;
     padding-top: 15px;
+    margin-bottom: 25px;
+}
+/*ABOUT*/
+.about_container{
+    max-width: 100%;
+    min-height:0 auto ;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.about_container img{
+    max-width: 100%;
+}
+.about_container p {
+    margin-top: 50px;
+} 
+.about_container h1{
+    margin-top: 40px;
+}
+
+/* Services */
+.services{
+    max-width: 100%;
+    min-height:0 auto ;
+    text-align: center;
+}
+.services img{
+    max-width: 100%;
+}
+.services_container{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 50px 100px;
+}
+.services_container_block{
+    min-height:0 auto ;
+    padding-top: 22px;
     margin-bottom: 25px;
 }
 
@@ -335,6 +368,9 @@ textarea{
         }
         .blog-container{
             width: 20rem;
+        }
+        .services_container{
+            grid-template-columns: auto ;
         }
     
 }
